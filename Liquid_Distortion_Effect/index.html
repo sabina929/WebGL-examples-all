@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Liquid Distortion Effect</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img1 img"></div>
+      <div class="img2 img"></div>
+      <div class="img3 img"></div>
+      <div class="img4 img"></div>
+      <div class="img5 img"></div>
+      <div class="img6 img"></div>
+    </div>
+
+    <script src="https://threejs.org/build/three.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <!-- https://github.com/robin-dela/hover-effect -->
+    <script src="hover-effect.umd.js"></script>
+
+    <script>
+      // https://images.unsplash.com/photo-1503924087716-07cbd5f49b21?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80
+      // https://images.unsplash.com/photo-1518891558922-9a7a900d4594?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80
+
+      // IMAGE 1
+      var hoverDistort = new hoverEffect({
+        parent: document.querySelector(".img1"),
+        intensity: 0.5,
+        image1:
+          "https://images.unsplash.com/photo-1523436278115-b135a7a26ad6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+        image2:
+          "https://images.unsplash.com/photo-1517732985480-66abf3dbf26e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+        displacementImage: "./displacement-maps/ramen.jpg"
+      });
+
+      // IMAGE 2
+      var hoverDistort = new hoverEffect({
+        parent: document.querySelector(".img2"),
+        intensity: 0.5,
+        image1:
+          "https://images.unsplash.com/photo-1571219836033-d62fe95c873d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+        image2:
+          "https://images.unsplash.com/photo-1563009709-6abed6af4bdc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        displacementImage: "./displacement-maps/stripe2.png"
+      });
+
+      // IMAGE 3
+      var hoverDistort = new hoverEffect({
+        parent: document.querySelector(".img3"),
+        intensity: 0.5,
+        image1:
+          "https://images.unsplash.com/photo-1507123088351-58f09404d43a?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80",
+        image2:
+          "https://images.unsplash.com/photo-1518173184999-0381b5eb56d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
+        displacementImage: "./displacement-maps/heightMap.png"
+      });
+
+      // IMAGE 4
+      var hoverDistort = new hoverEffect({
+        parent: document.querySelector(".img4"),
+        intensity: 0.5,
+        image1:
+          "https://images.unsplash.com/photo-1505909182942-e2f09aee3e89?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjk5NTd9&auto=format&fit=crop&w=1052&q=80",
+        image2:
+          "https://images.unsplash.com/photo-1562931520-26efd3a1d199?ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+        displacementImage: "./displacement-maps/dot.jpg"
+      });
+
+      // IMAGE 5
+      var hoverDistort = new hoverEffect({
+        parent: document.querySelector(".img5"),
+        intensity: 0.5,
+        image1:
+          "https://images.unsplash.com/photo-1520253735241-863d723ccf9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=910&q=80",
+        image2:
+          "https://images.unsplash.com/photo-1567484020449-5d7175bc869a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+        displacementImage: "./displacement-maps/fluid.jpg"
+      });
+
+      // IMAGE 6
+      var hoverDistort = new hoverEffect({
+        parent: document.querySelector(".img6"),
+        intensity: 0.5,
+        image1:
+          "https://images.unsplash.com/photo-1525877145339-7f6adbb4d614?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80",
+        image2:
+          "https://images.unsplash.com/photo-1545297730-c7a5ff431e8a?ixlib=rb-1.2.1&auto=format&fit=crop&w=656&q=80",
+        displacementImage: "./displacement-maps/stripe1.png"
+      });
+    </script>
+  </body>
+</html>
